@@ -1,10 +1,10 @@
-    1 0.000000000 192.168.1.101 → 192.168.1.1  HTTP 556 GET /api/monitoring/traffic-statistics HTTP/1.1 
-    2 0.000538948 192.168.1.101 → 192.168.1.1  HTTP 543 GET /api/net/current-plmn HTTP/1.1 
-    3 0.002138842 192.168.1.101 → 192.168.1.1  HTTP 556 GET /api/monitoring/traffic-statistics HTTP/1.1 
-    4 0.002155192  192.168.1.1 → 192.168.1.101 TCP 66 80 → 47730 [ACK] Seq=1 Ack=478 Win=8792 Len=0 TSval=122945 TSecr=2915900049
-    5 0.004151236  192.168.1.1 → 192.168.1.101 TCP 66 80 → 53856 [ACK] Seq=1 Ack=491 Win=5576 Len=0 TSval=122946 TSecr=2915900050
-    6 0.039718295  192.168.1.1 → 192.168.1.101 TCP 433 HTTP/1.1 200 OK  [TCP segment of a reassembled PDU]
-    7 0.039764925 192.168.1.101 → 192.168.1.1  TCP 66 53856 → 80 [ACK] Seq=491 Ack=368 Win=499 Len=0 TSval=2915900088 TSecr=122949
-    8 0.041598273  192.168.1.1 → 192.168.1.101 HTTP/XML 503 HTTP/1.1 200 OK 
-    9 0.041615103 192.168.1.101 → 192.168.1.1  TCP 66 53856 → 80 [ACK] Seq=491 Ack=805 Win=496 Len=0 TSval=2915900090 TSecr=122949
-   10 0.044172789  192.168.1.1 → 192.168.1.101 TCP 66 80 → 33378 [ACK] Seq=1 Ack=491 Win=16832 Len=0 TSval=122950 TSecr=2915900048
+    1 0.000000000 192.168.0.173 → 173.194.76.188 TCP 66 36738 → 443 [ACK] Seq=1 Ack=1 Win=501 Len=0 TSval=2489068418 TSecr=973538615
+    2 0.146643556 173.194.76.188 → 192.168.0.173 TCP 66 [TCP ACKed unseen segment] 443 → 36738 [ACK] Seq=1 Ack=2 Win=265 Len=0 TSval=973584629 TSecr=2489022590
+    3 5.149901219 Guangzho_b4:5c:d1 → IntelCor_94:be:60 ARP 42 Who has 192.168.0.173? Tell 192.168.0.1
+    4 5.149931962 IntelCor_94:be:60 → Guangzho_b4:5c:d1 ARP 42 192.168.0.173 is at a4:4e:31:94:be:60
+    5 15.691955305 fe80::515:3f01:b58:8569 → ff02::16     ICMPv6 110 Multicast Listener Report Message v2
+    6 15.713191567      0.0.0.0 → 255.255.255.255 DHCP 346 DHCP Request  - Transaction ID 0xeefff42d
+    7 15.799084252 192.168.0.173 → 224.0.0.251  MDNS 82 Standard query 0x0000 PTR _googlecast._tcp.local, "QM" question
+    8 15.799303012 192.168.0.173 → 224.0.0.251  MDNS 82 Standard query 0x0000 PTR _googlecast._tcp.local, "QM" question
+    9 15.872138628 IntelCor_94:be:60 → Broadcast    ARP 42 Who has 192.168.0.1? Tell 192.168.0.173
+   10 16.640042031 fe80::515:3f01:b58:8569 → ff02::16     ICMPv6 110 Multicast Listener Report Message v2

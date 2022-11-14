@@ -8,12 +8,7 @@ Created on Sat Nov  5 02:56:47 2022
 
 import os
 import subprocess
-#import reload
 
-# 'os.system("""tshark -c 5""")
-
-# proc1 = subprocess.call('tshark -c 10', shell=True)
-# print("hello world")'
 
 import multiprocessing
 import time
@@ -23,14 +18,7 @@ import dpi_module
 import sys
 import warnings
 
-#key interrupt function
-# import sys, signal
-# def signal_handler(signal, frame):
-#     print("\nprogram exiting gracefully")
-#     sys.exit(0)
 
-# signal.signal(signal.SIGINT, signal_handler)
-#warnings.filterwarnings("ignore")
 
 #Multiprocessing
 class Process(multiprocessing.Process):
@@ -80,13 +68,12 @@ def Run_main():
         p.join()
         
 
-
 # control with input
 Run_main()
 while (True):
     
     
-    x = str(input("continue to caputure (yes/no) "))
+    x = str(input("continue to capture (yes/no) "))
     if x == "yes":
         Run_main()
     elif x == "no":

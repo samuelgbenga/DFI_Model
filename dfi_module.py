@@ -7,7 +7,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import time
 import warnings
-import getDetails2
+import getDetails
 
 from prettytable import PrettyTable
 #from texttable import Texttable
@@ -46,9 +46,6 @@ def Get_result():
     
     
     
-    # convert hex to decimal
-    # for flag, count
-    #df_new['flag'] = df_new['flag'].apply(int, base=16)
     try:
         df_new['flag'] = df_new['flag'].apply(Clean)
         df_new['count'] = df_new['count'].apply(Clean)
@@ -82,7 +79,7 @@ def Clean(x):
 
 def Gen_table():
     result, index_nan = Get_result()    
-    packet_info = getDetails2.GetInfo(index_nan);
+    packet_info = getDetails.GetInfo(index_nan);
     my_table = PrettyTable()
     
     my_table.add_column("Packet Information", packet_info)
@@ -92,9 +89,7 @@ def Gen_table():
     #print(my_table) 
     return my_table
 
-#Gen_table()
-# print(df_result)
-#print(packet_info)
+
 
 
 

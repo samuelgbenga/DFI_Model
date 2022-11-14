@@ -9,9 +9,6 @@ import os
 import subprocess
 
 
-
-
-
 # capture and read file into dpi for result
 def Get_dpi():
     os.system("./ndpi/ndpiReader -i dpi_packet.pcap")
